@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="bit_drop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slot" translatesAutoresizingMaskIntoConstraints="NO" id="77d-6E-GgF">
+                                <rect key="frame" x="220" y="505" width="160" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="77d-6E-GgF" secondAttribute="height" multiplier="557:100" id="24C-Dj-F9e"/>
+                                    <constraint firstAttribute="width" constant="160" id="Yhz-px-OHS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="jXD-E9-aad" customClass="SpinningImageView" customModule="bit_drop" customModuleProvider="target">
+                                <rect key="frame" x="249" y="47" width="102" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="V4e-f2-ecX"/>
+                                    <constraint firstAttribute="width" secondItem="jXD-E9-aad" secondAttribute="height" multiplier="1:1" id="jKC-L0-QIG"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0B-9U-7Hf" userLabel="boundaryView">
+                                <rect key="frame" x="0.0" y="524" width="600" height="76"/>
+                                <color key="backgroundColor" red="0.21769329905509949" green="0.60984611511230469" blue="0.82702958583831787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slot-bottom" translatesAutoresizingMaskIntoConstraints="NO" id="jev-r8-rao">
+                                <rect key="frame" x="219" y="523" width="159" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="ncP-mH-gNA"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bit Drop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-Sx-3H7">
+                                <rect key="frame" x="269" y="350" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21769329905509949" green="0.60984611511230469" blue="0.82702958583831787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7L-Sx-3H7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1js-7e-yXd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="77d-6E-GgF" secondAttribute="bottom" constant="66" id="9Af-IE-pGB"/>
+                            <constraint firstItem="jXD-E9-aad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JYw-ZM-KHT"/>
+                            <constraint firstItem="jXD-E9-aad" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="KV3-dN-eX4"/>
+                            <constraint firstItem="y0B-9U-7Hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MXK-GH-Hsh"/>
+                            <constraint firstItem="jev-r8-rao" firstAttribute="bottom" secondItem="77d-6E-GgF" secondAttribute="bottom" id="NEd-PI-dyF"/>
+                            <constraint firstItem="a7L-Sx-3H7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="ONi-OG-n0K"/>
+                            <constraint firstItem="77d-6E-GgF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qj1-wf-AQK"/>
+                            <constraint firstItem="jev-r8-rao" firstAttribute="leading" secondItem="77d-6E-GgF" secondAttribute="leading" constant="-1" id="bMN-Sh-qm8"/>
+                            <constraint firstItem="y0B-9U-7Hf" firstAttribute="top" secondItem="77d-6E-GgF" secondAttribute="bottom" constant="-10" id="f0z-dZ-Bi1"/>
+                            <constraint firstItem="jev-r8-rao" firstAttribute="trailing" secondItem="77d-6E-GgF" secondAttribute="trailing" constant="-2" id="fJJ-yv-rZp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y0B-9U-7Hf" secondAttribute="bottom" id="fvf-t2-Pnr"/>
+                            <constraint firstAttribute="trailing" secondItem="y0B-9U-7Hf" secondAttribute="trailing" id="kfR-rr-ELb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boundaryView" destination="y0B-9U-7Hf" id="TC4-iq-qMc"/>
+                        <outlet property="coinImageView" destination="jXD-E9-aad" id="vcm-Tk-G4b"/>
+                        <outlet property="heroLabel" destination="a7L-Sx-3H7" id="BPD-WS-36v"/>
+                        <outlet property="slotImageView" destination="77d-6E-GgF" id="0IY-Yc-Psn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoin" width="67" height="67"/>
+        <image name="slot" width="95" height="17"/>
+        <image name="slot-bottom" width="94" height="6"/>
+    </resources>
+</document>
